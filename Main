@@ -257,9 +257,9 @@ Section3:NewButton("Combat Warriors", "credits to project hook", function()
     loadstring(game:HttpGet("https://projecthook.xyz/scripts/free.lua"))()
 end)
 
-Section2:NewButton("Force Reset", "reset your character ", function()
-    game.Players.LocalPlayer.Character.Humanoid.Health = 0
-end)
+Section6:NewButton("Fe Fling", "fling ppl xd", function()
+    loadstring(game:HttpGet(('https://pastefy.ga/xBdd9GId/raw'),true))()
+end)    
 
 Section7:NewButton("Aimbot/Hitbox/Silent Aim", "increase your aim", function()
     local Camera = game:GetService("Workspace").CurrentCamera
