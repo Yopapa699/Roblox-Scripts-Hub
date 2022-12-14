@@ -261,6 +261,14 @@ Section6:NewButton("Fe Fling", "fling ppl xd", function()
     loadstring(game:HttpGet(('https://pastefy.ga/xBdd9GId/raw'),true))()
 end)    
 
+Section6:NewButton("Fe pp", "this script is sus", function()
+    loadstring(game:HttpGet(('https://raw.githubusercontent.com/Flybobbb/requested/main/Resquestedscript'),true))()
+end)
+
+Section6:NewButton("neckless", "turn on this before u execute fe pp", function()
+    loadstring(game:HttpGet(('https://raw.githubusercontent.com/Flybobbb/requested/main/Resquestedscript'),true))()
+end)
+
 Section7:NewButton("Aimbot/Hitbox/Silent Aim", "increase your aim", function()
     local Camera = game:GetService("Workspace").CurrentCamera
 local Players = game:GetService("Players")
