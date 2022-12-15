@@ -272,6 +272,14 @@ Section6:NewButton("neckless", "turn on this before u execute fe pp", function()
     loadstring(game:HttpGet(('https://raw.githubusercontent.com/Flybobbb/requested/main/Resquestedscript'),true))()
 end)
 
+Section3:NewButton("Broken Bones 5", "credits to Owner", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/oShyyyyy/iris-jhub/main/broknebones'))()
+end)
+
+Section3:NewButton("Pet Empire Tycoon", "cat is e", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/ToraIsMe2/ToraIsMe2/main/0pettycoon", true))()
+end)
+
 Section7:NewButton("Aimbot/Hitbox/Silent Aim", "increase your aim", function()
     local Camera = game:GetService("Workspace").CurrentCamera
 local Players = game:GetService("Players")
