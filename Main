@@ -61,7 +61,7 @@ local Section4 = Tab4:NewSection("Ui Library: Maik#5266")
 local Section4 = Tab4:NewSection("suggest script in our discord server")
 local Section5 = Tab5:NewSection("Join our discord to get updates")
 local Section6 = Tab6:NewSection("these are all Fe scripts")
-local Section7 = Tab7:NewSection("KAT script made by me")
+local Section7 = Tab7:NewSection("by JN HH GAMING")
 
 Section1:NewKeybind("Toggle ui", "Toggle the ui yes", Enum.KeyCode.F6, function()
     Library:ToggleUI()
