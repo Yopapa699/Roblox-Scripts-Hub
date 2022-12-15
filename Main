@@ -220,7 +220,7 @@ Section6:NewButton("chat bypass", " you need to rejoin to reset", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/x114/RobloxScripts/main/FullChatBypass"))()
 end)
 
-Section3:NewButton("Shindo Life", "credits to premier hub", function()
+Section3:NewButton("Shindo Life (pc)", "credits to premier hub", function()
     -- https://discord.gg/c7tRAqYHMA
 loadstring(game:HttpGet('https://raw.githubusercontent.com/TrustsenseDev/Utilities/main/Premier.lua', true))()
 end)
