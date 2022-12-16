@@ -280,6 +280,10 @@ Section3:NewButton("Pet Empire Tycoon", "cat is e", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/ToraIsMe2/ToraIsMe2/main/0pettycoon", true))()
 end)
 
+Section3:NewButton("Shindo life (mobile)", "credits to Premier", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/SxnwDev/Premier/main/Free-Premier.lua", true))()
+end)
+
 Section7:NewButton("Aimbot/Hitbox/Silent Aim", "increase your aim", function()
     local Camera = game:GetService("Workspace").CurrentCamera
 local Players = game:GetService("Players")
