@@ -288,6 +288,10 @@ Section3:NewButton("Edward Man Eating Train", "game name kinda long", function()
     loadstring(game:HttpGet("https://pastebin.com/raw/6ZdbXUcL"))()
 end)
 
+Section3:NewButton("Driving Empire", "nothing to see here", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/GodXNation/GodXNation/main/midnight%20racing%20hubV2%20fixed", true))()
+end)
+
 Section7:NewButton("Aimbot/Hitbox/Silent Aim", "increase your aim", function()
     local Camera = game:GetService("Workspace").CurrentCamera
 local Players = game:GetService("Players")
