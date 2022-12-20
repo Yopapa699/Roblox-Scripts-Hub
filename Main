@@ -296,6 +296,10 @@ Section3:NewButton("YouTube Simulator Z", "credits to TORA", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/ToraIsMe2/ToraIsMe2/main/0youtubez", true))()
 end)
 
+Section3:NewButton("Dungeon Quest", "This is op asf", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/slightten/scripts/main/Dungeon%20Quest'))()
+end)
+
 Section7:NewButton("Aimbot/Hitbox/Silent Aim", "increase your aim", function()
     local Camera = game:GetService("Workspace").CurrentCamera
 local Players = game:GetService("Players")
