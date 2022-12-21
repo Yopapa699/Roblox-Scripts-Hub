@@ -300,6 +300,192 @@ Section3:NewButton("Dungeon Quest", "This is op asf", function()
     loadstring(game:HttpGet('https://raw.githubusercontent.com/slightten/scripts/main/Dungeon%20Quest'))()
 end)
 
+Section3:NewButton("Max's Glitch Per Difficulty Chart Obby", "auto complete the whole game", function()
+    local newPos2 = CFrame.new(622.250061, 15.9100113, -147.750046, 0, 0, 1, 0, 1, -0, -1, 0, 0)
+local newPos3 = CFrame.new(574.929138, 4.7552948, -147.749939, 0, 0, 1, 0, 1, -0, -1, 0, 0)
+local newPos4 = CFrame.new(524.928467, 10.7553558, -147.749954, 0, 0, 1, 0, 1, -0, -1, 0, 0)
+local newPos5 = CFrame.new(478.928162, 10.7553558, -147.749954, 0, 0, 1, 0, 1, -0, -1, 0, 0)
+local newPos6 = CFrame.new(439.927307, 10.7553635, -147.749954, 0, 0, 1, 0, 1, -0, -1, 0, 0)
+local newPos7 = CFrame.new(392.927032, 10.7503815, -147.749893, 0, 0, 1, 0, 1, -0, -1, 0, 0)
+local newPos8 = CFrame.new(341.9263, 10.7503853, -147.749878, 0, 0, 1, 0, 1, -0, -1, 0, 0)
+local newPos9 = CFrame.new(305.924561, 38.7553253, -147.749817, 0, 0, 1, 0, 1, -0, -1, 0, 0)
+local newPos10 = CFrame.new(257.927948, 38.7553177, -147.749542, 0, 0, 1, 0, 1, -0, -1, 0, 0)
+local newPos11 = CFrame.new(210.927628, 38.7553177, -147.749191, 0, 0, 1, 0, 1, -0, -1, 0, 0)
+local newPos12 = CFrame.new(175.926453, 38.7553177, -147.748962, 0, 0, 1, 0, 1, -0, -1, 0, 0)
+local newPos13 = CFrame.new(125.926132, 38.7553177, -147.748581, 0, 0, 1, 0, 1, -0, -1, 0, 0)
+local newPos14 = CFrame.new(95.9249649, 52.7554092, -147.748413, 0, 0, 1, 0, 1, -0, -1, 0, 0)
+local newPos15 = CFrame.new(52.9246902, 52.7554092, -147.748047, 0, 0, 1, 0, 1, -0, -1, 0, 0)
+local newPos16 = CFrame.new(1.92435551, 52.7554092, -147.747757, 0, 0, 1, 0, 1, -0, -1, 0, 0)
+local newPos17 = CFrame.new(-44.0769196, 52.7554131, -147.747452, 0, 0, 1, 0, 1, -0, -1, 0, 0)
+local newPos18 = CFrame.new(-73.0764694, 73.7554855, -147.746201, 0, 0, 1, 0, 1, -0, -1, 0, 0)
+local newPos19 = CFrame.new(-121.076767, 73.7554855, -147.745911, 0, 0, 1, 0, 1, -0, -1, 0, 0)
+local newPos20 = CFrame.new(-166.077972, 73.7554932, -147.745712, 0, 0, 1, 0, 1, -0, -1, 0, 0)
+local newPos21 = CFrame.new(-202.078217, 73.7554932, -147.745499, 0, 0, 1, 0, 1, -0, -1, 0, 0)
+local newPos22 = CFrame.new(-253.078552, 73.7554932, -147.745224, 0, 0, 1, 0, 1, -0, -1, 0, 0)
+local newPos23 = CFrame.new(-291.076721, 84.7559357, -147.743942, 0, 0, 1, 0, 1, -0, -1, 0, 0)
+local newPos24 = CFrame.new(-325.074677, 100.75518, -147.743973, 0, 0, 1, 0, 1, -0, -1, 0, 0)
+local newPos25 = CFrame.new(-354.074005, 118.755226, -146.743729, 0, 0, 1, 0, 1, -0, -1, 0, 0)
+local newPos26 = CFrame.new(-402.074249, 118.755226, -146.743378, 0, 0, 1, 0, 1, -0, -1, 0, 0)
+local newPos27 = CFrame.new(-438.074493, 118.755226, -146.743073, 0, 0, 1, 0, 1, -0, -1, 0, 0)
+local newPos28 = CFrame.new(-490.07486, 118.755226, -146.742676, 0, 0, 1, 0, 1, -0, -1, 0, 0)
+local newPos29 = CFrame.new(-530.07605, 118.755234, -146.742371, 0, 0, 1, 0, 1, -0, -1, 0, 0)
+local newPos30 = CFrame.new(-566.076294, 118.755234, -146.742096, 0, 0, 1, 0, 1, -0, -1, 0, 0)
+local newPos31 = CFrame.new(-609.076538, 118.755234, -146.741791, 0, 0, 1, 0, 1, -0, -1, 0, 0)
+local newPos32 = CFrame.new(-641.078918, 121.755661, -146.749664, 0, 0, 1, 0, 1, -0, -1, 0, 0)
+local newPos33 = CFrame.new(-693.080261, 121.755669, -146.749359, 0, 0, 1, 0, 1, -0, -1, 0, 0)
+local newPos34 = CFrame.new(-744.080566, 121.755669, -146.748764, 0, 0, 1, 0, 1, -0, -1, 0, 0)
+local newPos35 = CFrame.new(-788.080566, 121.755669, -146.748749, 0, 0, 1, 0, 1, -0, -1, 0, 0)
+local newPos36 = CFrame.new(-835.580627, 122.755669, -146.748383, 0, 0, 1, 0, 1, -0, -1, 0, 0)
+local newPos37 = CFrame.new(-864.578857, 141.755676, -146.748764, 0, 0, 1, 0, 1, -0, -1, 0, 0)
+local newPos38 = CFrame.new(-902.578491, 141.755707, -146.749985, 0, 0, 1, 0, 1, -0, -1, 0, 0)
+local newPos39 = CFrame.new(-952.580688, 141.755707, -146.751556, 0, 0, 1, 0, 1, -0, -1, 0, 0)
+local newPos40 = CFrame.new(-996.580933, 141.755707, -146.753098, 0, 0, 1, 0, 1, -0, -1, 0, 0)
+local newPos41 = CFrame.new(-1036.58105, 141.755692, -146.754349, 0, 0, 1, 0, 1, -0, -1, 0, 0)
+local newPos42 = CFrame.new(-1079.08252, 141.755707, -146.755875, 0, 0, 1, 0, 1, -0, -1, 0, 0)
+local newPos43 = CFrame.new(-1107.58203, 160.75589, -146.75769, 0, 0, 1, 0, 1, -0, -1, 0, 0)
+local newPos44 = CFrame.new(-1173.83167, 160.755875, -146.761765, 0, 0, 1, 0, 1, -0, -1, 0, 0)
+local newPos45 = CFrame.new(-1213.83032, 160.755875, -146.763992, 0, 0, 1, 0, 1, -0, -1, 0, 0)
+local newPos46 = CFrame.new(-1274.82837, 160.75589, -146.764648, 0, 0, 1, 0, 1, -0, -1, 0, 0)
+local newPos47 = CFrame.new(-1312.32678, 184.755875, -147.26506, 0, 0, 1, 0, 1, -0, -1, 0, 0)
+local newPos48 = CFrame.new(-1357.32544, 184.755875, -147.265579, 0, 0, 1, 0, 1, -0, -1, 0, 0)
+local newPos49 = CFrame.new(-1417.32776, 119.75544, -147.263702, 0, 0, 1, 0, 1, -0, -1, 0, 0)
+local newPos50 = CFrame.new(-1466.32617, 111.755455, -147.26181, 0, 0, 1, 0, 1, -0, -1, 0, 0)
+local newPos51 = CFrame.new(-1526.32507, 111.760994, -147.261292, 0, 0, 1, 0, 1, -0, -1, 0, 0)
+local newPos52 = CFrame.new(-1590.32544, 111.764992, -147.261032, 0, 0, 1, 0, 1, -0, -1, 0, 0)
+local newPos53 = CFrame.new(-1638.32434, 111.765251, -147.263962, 0, 0, 1, 0, 1, -0, -1, 0, 0)
+local newPos54 = CFrame.new(-1682.32458, 111.77005, -147.263779, 0, 0, 1, 0, 1, -0, -1, 0, 0)
+local newPos55 = CFrame.new(-1735.32458, 111.775826, -147.263412, 0, 0, 1, 0, 1, -0, -1, 0, 0)
+local newPos56 = CFrame.new(-1785.32227, 132.780075, -147.263107, 0, 0, 1, 0, 1, -0, -1, 0, 0)
+local newPos57 = CFrame.new(-1849.31958, 135.781174, -147.26593, 0, 0, 1, 0, 1, -0, -1, 0, 0)
+local newPos58 = CFrame.new(-1893.51978, 135.786011, -147.265793, 0, 0, 1, 0, 1, -0, -1, 0, 0)
+local newPos59 = CFrame.new(-1993.51978, 135.786011, -147.265793, 0, 0, 1, 0, 1, -0, -1, 0, 0)
+local newPos60 = CFrame.new(-2031.81775, 148.283676, -147.264069, 0, 0, 1, 0, 1, -0, -1, 0, 0)
+local newPos61 = CFrame.new(-2119.81567, 148.287567, -147.264114, 0, 0, 1, 0, 1, -0, -1, 0, 0)
+game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = newPos2
+wait(0.2)
+game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = newPos3
+wait(0.2)
+game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = newPos4
+wait(0.2)
+game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = newPos5
+wait(0.2)
+game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = newPos6
+wait(0.2)
+game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = newPos7
+wait(0.2)
+game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = newPos8
+wait(0.2)
+game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = newPos9
+wait(0.2)
+game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = newPos10
+wait(0.2)
+game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = newPos11
+wait(0.2)
+game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = newPos12
+wait(0.2)
+game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = newPos13
+wait(0.2)
+game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = newPos14
+wait(0.2)
+game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = newPos15
+wait(0.2)
+game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = newPos16
+wait(0.2)
+game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = newPos17
+wait(0.2)
+game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = newPos18
+wait(0.2)
+game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = newPos19
+wait(0.2)
+game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = newPos20
+wait(0.2)
+game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = newPos21
+wait(0.2)
+game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = newPos22
+wait(0.2)
+game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = newPos23
+wait(0.2)
+game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = newPos24
+wait(0.2)
+game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = newPos25
+wait(0.2)
+game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = newPos26
+wait(0.2)
+game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = newPos27
+wait(0.2)
+game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = newPos28
+wait(0.2)
+game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = newPos29
+wait(0.2)
+game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = newPos30
+wait(0.2)
+game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = newPos31
+wait(0.2)
+game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = newPos32
+wait(0.2)
+game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = newPos33
+wait(0.2)
+game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = newPos34
+wait(0.2)
+game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = newPos35
+wait(0.2)
+game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = newPos36
+wait(0.2)
+game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = newPos37
+wait(0.2)
+game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = newPos38
+wait(0.2)
+game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = newPos39
+wait(0.2)
+game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = newPos40
+wait(0.2)
+game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = newPos41
+wait(0.2)
+game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = newPos42
+wait(0.2)
+game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = newPos43
+wait(0.2)
+game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = newPos44
+wait(0.2)
+game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = newPos45
+wait(0.2)
+game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = newPos46
+wait(0.2)
+game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = newPos47
+wait(0.2)
+game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = newPos48
+wait(0.2)
+game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = newPos49
+wait(0.2)
+game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = newPos50
+wait(0.2)
+game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = newPos51
+wait(0.2)
+game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = newPos52
+wait(0.2)
+game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = newPos53
+wait(0.2)
+game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = newPos54
+wait(0.2)
+game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = newPos55
+wait(0.2)
+game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = newPos56
+wait(0.2)
+game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = newPos57
+wait(0.2)
+game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = newPos58
+wait(0.2)
+game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = newPos59
+wait(0.2)
+game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = newPos60
+wait(0.2)
+game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = newPos61
+end)
+
+Section3:NewButton("MM2 (mobile & pc)", "best MM2 gui in my opinion", function()
+    loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/Drifter0507/GUIS/main/MURDER%20MYSTERY%202", true))()
+end)
+
 Section7:NewButton("Aimbot/Hitbox/Silent Aim", "increase your aim", function()
     local Camera = game:GetService("Workspace").CurrentCamera
 local Players = game:GetService("Players")
